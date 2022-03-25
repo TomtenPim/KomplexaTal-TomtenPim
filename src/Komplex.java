@@ -35,8 +35,8 @@ public class Komplex {
           return new Komplex(real * b.real - img * b.img, img * b.real + real * b.img  );
      }
 
-     public Komplex arg(){
-          return new double[Math.atan(img / real)];
+     public double arg(){
+          return Math.atan(img / real);
      }
 }
 
